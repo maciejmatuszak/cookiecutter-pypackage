@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import os
+import subprocess
 
 PROJECT_DIRECTORY = os.path.realpath(os.path.curdir)
 
@@ -20,3 +21,8 @@ if __name__ == '__main__':
 
     if 'Not open source' == '{{ cookiecutter.open_source_license }}':
         remove_file('LICENSE')
+
+    if '{{ cookiecutter.create_git_repo }}' == 'y':
+        subprocess.call(['git', 'init'], cwd=PROJECT_DIRECTORY)
+        subprocess.call(['git', 'add', '*'], cwd=PROJECT_DIRECTORY)
+        subprocess.call(['git', 'commit', '-m', 'Initial commit'], cwd=PROJECT_DIRECTORY)

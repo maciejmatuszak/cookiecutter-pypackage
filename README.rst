@@ -2,12 +2,12 @@
 Cookiecutter PyPackage
 ======================
 
-.. image:: https://pyup.io/repos/github/audreyfeldroy/cookiecutter-pypackage/shield.svg
-    :target: https://pyup.io/repos/github/audreyfeldroy/cookiecutter-pypackage/
+.. image:: https://pyup.io/repos/github/maciejmatuszak/cookiecutter-pypackage/shield.svg
+    :target: https://pyup.io/repos/github/maciejmatuszak/cookiecutter-pypackage/
     :alt: Updates
 
-.. image:: https://travis-ci.org/audreyfeldroy/cookiecutter-pypackage.svg?branch=master
-    :target: https://travis-ci.org/github/audreyfeldroy/cookiecutter-pypackage
+.. image:: https://travis-ci.org/maciejmatuszak/cookiecutter-pypackage.svg?branch=master
+    :target: https://travis-ci.org/github/maciejmatuszak/cookiecutter-pypackage
     :alt: Build Status
 
 .. image:: https://readthedocs.org/projects/cookiecutter-pypackage/badge/?version=latest
@@ -16,7 +16,7 @@ Cookiecutter PyPackage
 
 Cookiecutter_ template for a Python package.
 
-* GitHub repo: https://github.com/audreyfeldroy/cookiecutter-pypackage/
+* GitHub repo: https://github.com/maciejmatuszak/cookiecutter-pypackage/
 * Documentation: https://cookiecutter-pypackage.readthedocs.io/
 * Free software: BSD license
 
@@ -38,8 +38,8 @@ Build Status
 
 Linux:
 
-.. image:: https://img.shields.io/travis/audreyfeldroy/cookiecutter-pypackage.svg
-    :target: https://travis-ci.org/audreyfeldroy/cookiecutter-pypackage
+.. image:: https://img.shields.io/travis/maciejmatuszak/cookiecutter-pypackage.svg
+    :target: https://travis-ci.org/maciejmatuszak/cookiecutter-pypackage
     :alt: Linux build status on Travis CI
 
 Windows:
@@ -58,7 +58,7 @@ Cookiecutter 1.4.0 or higher)::
 
 Generate a Python package project::
 
-    cookiecutter https://github.com/audreyfeldroy/cookiecutter-pypackage.git
+    cookiecutter https://github.com/maciejmatuszak/cookiecutter-pypackage.git
 
 Then:
 
