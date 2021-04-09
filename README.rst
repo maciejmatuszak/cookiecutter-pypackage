@@ -2,23 +2,21 @@
 Cookiecutter PyPackage
 ======================
 
-.. image:: https://pyup.io/repos/github/maciejmatuszak/cookiecutter-pypackage/shield.svg
-    :target: https://pyup.io/repos/github/maciejmatuszak/cookiecutter-pypackage/
-    :alt: Updates
-
-.. image:: https://travis-ci.org/maciejmatuszak/cookiecutter-pypackage.svg?branch=master
-    :target: https://travis-ci.org/github/maciejmatuszak/cookiecutter-pypackage
-    :alt: Build Status
-
-.. image:: https://readthedocs.org/projects/cookiecutter-pypackage/badge/?version=latest
-    :target: https://cookiecutter-pypackage.readthedocs.io/en/latest/?badge=latest
-    :alt: Documentation Status
-
 Cookiecutter_ template for a Python package.
 
 * GitHub repo: https://github.com/maciejmatuszak/cookiecutter-pypackage/
-* Documentation: https://cookiecutter-pypackage.readthedocs.io/
+* This is a fork of: https://github.com/audreyfeldroy/cookiecutter-pypackage
+* Documentation (based on original version): https://cookiecutter-pypackage.readthedocs.io/
 * Free software: BSD license
+
+Summary of changes from audreyfeldroy version:
+----------------------------------------------
+* added support for docopt as commandline
+* added support for automatic git repo creation
+* automated HISTORY.rst stamping on new release
+* default version is 1.0.0
+* updated .gitignore with jetbrain .idea entries
+* added Pygments package as dependency for rendering of rst files
 
 Features
 --------

@@ -7,6 +7,7 @@ Installation
 
 Stable release
 --------------
+Note this applies only if this package is deployed to pypi repository.
 
 To install {{ cookiecutter.project_name }}, run this command in your terminal:
 
