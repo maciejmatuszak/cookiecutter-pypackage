@@ -3,7 +3,7 @@ from os import makedirs
 from os.path import expanduser, join, dirname, exists
 from typing import List, Dict
 
-from {{ cookiecutter.project_slug }}.config.cli_config_models import CliConfig_, LogLevels, System
+from {{ cookiecutter.project_slug }}.config.cli_config_models import CliConfig_, LogLevels
 
 
 class CliConfig(CliConfig_):

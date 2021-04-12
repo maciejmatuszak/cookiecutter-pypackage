@@ -67,7 +67,6 @@ def main():
 {%- endif %}
 {%- if cookiecutter.command_line_interface|lower == 'docopt' %}
 def main():
-    version = pkg_resources.get_distribution('{{cookiecutter.project_slug}}').version
     arguments = docopt(__doc__, version=f'{__version__}')
     print(arguments)
     {% if cookiecutter.create_json_cli_config == 'y' %}config = CliConfig.getConfig(){% endif %}

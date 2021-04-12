@@ -129,3 +129,17 @@ $ git push
 $ git push --tags
 
 Travis will then deploy to PyPI if tests pass.
+
+CLI Configuration Notes
+-----------------------
+The CLI config can be use to persist information between executions.
+The package {{ cookiecutter.project_slug }}.config contains json schema cli_config_schema.json that defines the config structure.
+The actual python model classes are generated from the schema during python build using jsonschema2popo2 tool::
+
+    python setup.py build_py
+
+The config can be accessed via::
+
+    config = CliConfig.getConfig()
+
+By default the config file is stored in ${HOME}/{{ cookiecutter.project_slug }}/config.json
