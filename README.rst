@@ -28,6 +28,8 @@ Features
 * bump2version_: Pre-configured version bumping with a single command
 * Auto-release to PyPI_ when you push a new tag to master (optional)
 * Command line interface using Click (optional)
+* Command line interface using Docopt (optional)
+* JSON Cli Config framework
 
 .. _Cookiecutter: https://github.com/cookiecutter/cookiecutter
 

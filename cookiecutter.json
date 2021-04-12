@@ -18,6 +18,7 @@
     ],
     "create_author_file": "y",
     "create_git_repo": "y",
+    "create_json_cli_config": "y",
     "open_source_license": [
         "MIT license",
         "BSD license",
@@ -25,5 +26,8 @@
         "Apache Software License 2.0",
         "GNU General Public License v3",
         "Not open source"
+    ],
+    "_copy_without_render": [
+        "*{{cookiecutter.project_slug}}/config/python_class.jinja2"
     ]
 }
