@@ -5,6 +5,8 @@ include CONTRIBUTING.rst
 include HISTORY.rst
 include LICENSE
 include README.rst
+include {{ cookiecutter.project_slug }}/config/cli_config_schema.json
+include {{ cookiecutter.project_slug }}/config/python_class.jinja2
 
 recursive-include tests *
 recursive-exclude * __pycache__
