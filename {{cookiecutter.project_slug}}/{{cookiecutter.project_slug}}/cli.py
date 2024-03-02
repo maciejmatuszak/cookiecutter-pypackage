@@ -34,6 +34,10 @@ import click
 {%- if cookiecutter.command_line_interface|lower == 'docopt' %}
 from docopt import docopt
 import pkg_resources
+__version__ = '{{ cookiecutter.version }}'
+{%- endif %}
+{% if cookiecutter.create_json_cli_config == 'y' %}
+from {{cookiecutter.project_slug}}.config.CliConfig import CliConfig
 {%- endif %}
 
 {% if cookiecutter.command_line_interface|lower == 'click' %}
@@ -43,6 +47,8 @@ def main(args=None):
     click.echo("Replace this message by putting your code into "
                "{{cookiecutter.project_slug}}.cli.main")
     click.echo("See click documentation at https://click.palletsprojects.com/")
+    {% if cookiecutter.create_json_cli_config == 'y' %}config = CliConfig.getConfig(){% endif %}
+
     return 0
 {%- endif %}
 {%- if cookiecutter.command_line_interface|lower == 'argparse' %}
@@ -55,13 +61,15 @@ def main():
     print("Arguments: " + str(args._))
     print("Replace this message by putting your code into "
           "{{cookiecutter.project_slug}}.cli.main")
+
+    {% if cookiecutter.create_json_cli_config == 'y' %}config = CliConfig.getConfig(){% endif %}
     return 0
 {%- endif %}
 {%- if cookiecutter.command_line_interface|lower == 'docopt' %}
 def main():
-    version = pkg_resources.get_distribution('{{cookiecutter.project_slug}}').version
-    arguments = docopt(__doc__, version=f'Naval Fate {version}')
+    arguments = docopt(__doc__, version=f'{__version__}')
     print(arguments)
+    {% if cookiecutter.create_json_cli_config == 'y' %}config = CliConfig.getConfig(){% endif %}
     return 0
 {%- endif %}
 

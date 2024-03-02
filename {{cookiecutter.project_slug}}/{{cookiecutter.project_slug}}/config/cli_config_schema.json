@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "Schema id",
+    "title": "Example schema for config file",
+    "definitions": {
+        "LogLevels": {
+            "type": "string",
+            "enum": [
+                "FATAL",
+                "ERROR",
+                "WARNING",
+                "INFO",
+                "DEBUG"
+            ]
+        },
+        "CliConfig_": {
+            "type": "object",
+            "required": [
+            ],
+            "properties": {
+                "log_level_console": {
+                    "$ref": "#/definitions/LogLevels"
+                },
+                "log_level_file": {
+                    "$ref": "#/definitions/LogLevels"
+                },
+                "log_file_max_size_mb": {
+                    "type": "number",
+                    "default": 1024
+                },
+                "log_file_max_files": {
+                    "type": "integer",
+                    "default": 10
+                },
+                "log_file": {
+                    "type": "string",
+                    "default": "debug_log.log"
+                }
+            }
+        }
+    }
+}

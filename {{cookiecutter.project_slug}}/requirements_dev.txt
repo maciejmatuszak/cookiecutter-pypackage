@@ -8,6 +8,7 @@ coverage==4.5.4
 Sphinx==1.8.5
 twine==1.14.0
 Pygments==2.8.1
+{% if cookiecutter.create_json_cli_config == 'y' %}jsonschema2popo2==2.2.3{% endif %}
 {% if cookiecutter.command_line_interface|lower == 'click' -%}
 Click==7.0{% endif %}
 {% if cookiecutter.use_pytest == 'y' -%}

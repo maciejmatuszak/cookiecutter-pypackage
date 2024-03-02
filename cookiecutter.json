@@ -7,7 +7,7 @@
     "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
     "pypi_username": "{{ cookiecutter.github_username }}",
     "version": "1.0.0",
-    "use_pytest": "n",
+    "use_pytest": "y",
     "use_pypi_deployment_with_travis": "n",
     "add_pyup_badge": "n",
     "command_line_interface": [
@@ -18,6 +18,7 @@
     ],
     "create_author_file": "y",
     "create_git_repo": "y",
+    "create_json_cli_config": "y",
     "open_source_license": [
         "MIT license",
         "BSD license",
@@ -25,5 +26,8 @@
         "Apache Software License 2.0",
         "GNU General Public License v3",
         "Not open source"
+    ],
+    "_copy_without_render": [
+        "*{{cookiecutter.project_slug}}/config/python_class.jinja2"
     ]
 }
